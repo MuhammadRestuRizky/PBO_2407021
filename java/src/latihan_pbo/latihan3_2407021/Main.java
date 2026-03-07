@@ -1,18 +1,17 @@
 package latihan_pbo.latihan3_2407021;
 
-import latihan_pbo.latihan3_2407021.coba.Coba;
+import latihan_pbo.latihan3_2407021.coba.coba;
 
 public class Main {
     public static void main(String[] args) {
+        coba tes = new coba();
 
-        Coba pp1 = new Coba();
 
-        pp1.setPanjang(9);
-        System.out.println("Panjangnya adalah : " + pp1.getPanjang());
 
-        pp1.setLebar(13);
-        pp1.cetakLuas();
-
-        System.out.println("Luasnya adalah : " + pp1.hitungLuas());
+        tes.setPanjang(5);
+        System.out.println("Panjangnya adalah : "+ tes.getPanjang());
+        tes.setLebar(2);
+        tes.cetakluas();
+        System.out.println("Luasnya adalah : "+ tes.hitungluas());
     }
 }

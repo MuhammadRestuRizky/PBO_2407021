@@ -1,26 +1,31 @@
 package latihan_pbo.latihan3_2407021.coba;
 
-public class Coba {
+public class coba {
     protected double panjang;
     protected double lebar;
-
-    public void setPanjang(double panjang) {
+    protected double sisi;
+    
+    //method
+    // setter
+    public void setPanjang(double panjang){
         this.panjang = panjang;
     }
 
-    public void setLebar(double lebar) {
-        this.lebar = lebar;
-    }
-
-    public double getPanjang() {
+    //getter
+    public double getPanjang(){
         return panjang;
     }
 
-    public void cetakLuas() {
+    public void setLebar(double lebar){
+        this.lebar = lebar;
+    }
+
+    public void cetakluas(){
         System.out.println("Luasnya adalah : " + (panjang * lebar));
     }
 
-    public double hitungLuas() {
-        return panjang * lebar;
+    public double hitungluas(){
+        double Luas = panjang * lebar;
+        return Luas;
     }
 }

@@ -1,12 +1,33 @@
 package latihan_pbo.latihan2_2407021;
 
-public class Main {    
-  public static void main(String[] args) {
-      Coba pp1 = new Coba();
-      System.out.print("panjangnya adalah: " + pp1.getPanjang());
-      pp1.setPanjang(10);
-      pp1.setLebar(5);
-      pp1.cetakLuas();
-      System.out.println("Luasnya adalah: " + pp1.hitungLuas());
-  }
+class Cafe {
+    String nama;
+    String alamat;
+
+    // constructor
+    Cafe(String nama, String alamat) {
+        this.nama = nama;
+        this.alamat = alamat;
+    }
+
+    void buka() {
+        System.out.println(nama + " Sudah Buka di " + alamat);
+    }
+    void tutup() {
+        System.out.println(nama + " Sudah Tutup di " + alamat);
+    }
+}
+
+public class main {
+    public static void main(String[] args) {
+
+        Cafe cafe1 = new Cafe("Halaman", "Indramayu");
+        cafe1.buka();
+
+        Cafe cafe2 = new Cafe("Teringat", "Indramayu");
+        cafe2.tutup();
+
+        Cafe cafe3 = new Cafe("Kopken", "Indramayu");
+        cafe3.buka();
+    }
 }
