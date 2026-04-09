@@ -8,8 +8,12 @@ public class Main {
         double tinggi = 4;
 
         BangunRuang br = new BangunRuang(panjang, lebar, tinggi);
-
+        
+        System.out.println("Panjang   : " + br.getPanjang());
+        System.out.println("Lebar     : " + br.getLebar());
+        System.out.println("Tinggi    : " + br.getTinggi());
         System.out.println("Luas Alas : " + br.hitungLuas());
-        System.out.println("Volume    : " + br.hitungVolume());
+        System.out.println("Volume dari class Parents  : " + br.hitungVolume());
+        System.out.println("Volume dari class child   : " + br.hitungVolume2());
     }
 }
