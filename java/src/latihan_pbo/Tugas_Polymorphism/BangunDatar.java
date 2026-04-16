@@ -25,10 +25,11 @@ public class BangunDatar {
         return varB;
     }
 
-    // Method default
-    public double hitungLuas() {
-        return 0;
-    }
+
+    public double hitungLuas(); 
+ 
+    
+    
 
     public void tampilkan() {
         System.out.println("Bangun Datar");
